@@ -1,7 +1,3 @@
-Here you go 👍
-This is a **complete, clean, copy-paste `README.md` file**. You can paste it directly into your repo as `README.md`.
-
----
 
 ````md
 # Docker Build Context, Versioned Dockerfiles, and Named Volume Demo
