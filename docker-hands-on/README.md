@@ -24,17 +24,18 @@ Create a file named `Dockerfile` in your local folder:
 ```dockerfile
 FROM busybox
 
-# Create custom non-root user
+# Create non-root user
 RUN adduser -D appuser-nik
 
-# Set working directory
+# Create app directory and data directory
 WORKDIR /app
+RUN mkdir -p /app/data && chown -R appuser-nik /app
 
 # Switch to non-root user
 USER appuser-nik
 
-# Keep container running
 CMD ["sh", "-c", "while true; do sleep 60; done"]
+
 ```
 
 Build the image:
