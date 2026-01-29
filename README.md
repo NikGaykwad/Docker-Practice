@@ -169,9 +169,3 @@ docker rm mybusybox
 docker volume rm app-data
 docker rmi myapp:1.0 myapp:1.1 myapp:2.0
 ```
-
-```
-
-
-::contentReference[oaicite:0]{index=0}
-```
